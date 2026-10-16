@@ -4,12 +4,6 @@ import PipelineTrack from '../components/PipelineTrack.jsx'
 import { CheckList, CtaBand, LogoStrip, PillLink, Reveal, useInView, usePageMeta } from '../components/ui.jsx'
 import { B2B_AUDIENCES, CTA_PRIMARY, CTA_SECONDARY } from '../content.js'
 
-const SYMPTOMS = [
-  ['Prospecting happens in bursts', 'It starts when work is quiet and stops when it picks up.'],
-  ['No clear target list', 'Effort gets spread across the wrong accounts.'],
-  ['Follow-up relies on memory', 'Interested prospects go cold.'],
-]
-
 const DOES = [
   ['Identify the right prospects', 'Research your market, agree what a good-fit account looks like and build a database of organisations that match.'],
   ['Reach relevant decision-makers', 'Find the people responsible for buying your service and contact them with relevant, personalised messaging.'],
@@ -40,13 +34,14 @@ const SEGMENTS = [
 ]
 
 // One layout rail for every section: heading on the left, content on the right.
-function Rail({ id, title, intro, children, className = '' }) {
+function Rail({ id, title, intro, action, children, className = '' }) {
   return (
     <section id={id} className={`scroll-mt-20 border-t border-white/[0.06] py-24 sm:py-28 ${className}`}>
       <div className="container-site grid gap-12 lg:grid-cols-12 lg:gap-10">
         <Reveal className="lg:col-span-5">
           <h2 className="h-section max-w-md">{title}</h2>
           {intro && <p className="mt-5 max-w-md text-[16px] leading-relaxed text-muted">{intro}</p>}
+          {action && <div className="mt-8">{action}</div>}
         </Reveal>
         <div className="lg:col-span-7">{children}</div>
       </div>
@@ -142,18 +137,28 @@ export default function Home() {
 
       <LogoStrip />
 
-      <Rail title="New business shouldn't depend on who has time to prospect." className="border-t-0">
-        <Rows items={SYMPTOMS} />
-        <Reveal as="p" delay={0.3} className="mt-8 max-w-xl text-lg leading-relaxed text-ink">
-          The fix isn't more effort. It's a process that keeps running when you're busy.
+      <section className="py-24 sm:py-28">
+        <Reveal className="container-site text-center">
+          <h2 className="h-section mx-auto max-w-3xl">New business shouldn't depend on who has time to prospect.</h2>
+          <p className="lede mx-auto mt-6 max-w-2xl">
+            For most businesses, prospecting happens in bursts. It starts when work is quiet and stops when it picks up,
+            there's no clear target list, and follow-up relies on memory, so interested prospects go cold.
+          </p>
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-ink">
+            The fix isn't more effort. It's a process that keeps running when you're busy.
+          </p>
         </Reveal>
-      </Rail>
+      </section>
 
       <Rail
         title="We build and run the system that creates new conversations."
         intro="A managed process covering who to target, how to reach them and what happens when someone replies."
       >
         <Rows items={DOES} variant="stacked" />
+        <Reveal as="p" delay={0.3} className="mt-8 max-w-xl text-lg leading-relaxed text-ink">
+          The goal isn't just a meeting. It's a real relationship with the buyer, one that can lead to ongoing work and
+          contracts that last for years.
+        </Reveal>
       </Rail>
 
       {/* Process */}
@@ -196,6 +201,12 @@ export default function Home() {
         id="recent-work"
         title="Recent work."
         intro="A commercial grounds maintenance company in the Central West of NSW, looking for more high-ticket, recurring commercial contracts."
+        action={
+          <Link to="/b2b-lead-generation#stages" className="btn-ghost">
+            View our process
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        }
       >
         <Reveal className="panel overflow-hidden">
           <div className="p-8 sm:p-10">
