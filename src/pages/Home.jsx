@@ -5,22 +5,47 @@ import { CheckList, CtaBand, LogoStrip, PillLink, usePageMeta } from '../compone
 import { B2B_AUDIENCES, CTA_PRIMARY, CTA_SECONDARY } from '../content.js'
 
 const SYMPTOMS = [
-  ['Prospecting happens in bursts', 'It starts when work is quiet and stops when it picks up.'],
-  ['No clear target list', 'Effort gets spread across the wrong accounts.'],
-  ['Follow-up relies on memory', 'Interested prospects go cold.'],
+  ['Prospecting happens in bursts', 'Outreach starts when work is quiet and stops when it picks up again.'],
+  ['No clear target list', 'Without defined accounts and decision-makers, effort is spread too thin.'],
+  ['Follow-up relies on memory', 'Interested prospects go cold because no one owns the next step.'],
+]
+
+const DOES = [
+  [
+    'Identify the right prospects',
+    'Research your market, agree what a good-fit account looks like and build a database of organisations that match.',
+  ],
+  [
+    'Reach relevant decision-makers',
+    'Find the people responsible for buying your service and contact them with relevant, personalised messaging.',
+  ],
+  [
+    'Organise the follow-up',
+    'Planned follow-ups, managed replies and a CRM pipeline so every opportunity has a clear next step.',
+  ],
 ]
 
 const PHASES = [
-  { title: 'Target', text: 'Pick the sectors and regions worth pursuing and build the account list.' },
-  { title: 'Verify', text: 'Find the decision-makers and verify their contact details.' },
-  { title: 'Reach', text: 'Personalised outreach with planned follow-up.' },
-  { title: 'Hand off', text: 'Qualified replies go straight into your CRM.' },
+  { range: 'Stages 1–2', title: 'Target', text: 'Choose the sectors and regions worth pursuing, then build a database of organisations that fit.' },
+  { range: 'Stage 3', title: 'Verify', text: 'Identify the people who buy or influence the service and verify their contact details.' },
+  { range: 'Stages 4–5', title: 'Reach', text: 'Run personalised outbound campaigns with planned follow-up across the right channels.' },
+  { range: 'Stages 6–8', title: 'Hand off', text: 'Qualify replies, move opportunities into your CRM and report on what is working.' },
+]
+
+const MARKWICKS_STEPS = [
+  'Identify relevant organisations across suitable commercial sectors',
+  'Build a targeted prospect database for the region',
+  'Identify the decision-makers at each organisation',
+  'Prepare outbound messaging relevant to each sector',
+  'Execute outreach and planned follow-ups',
+  'Handle replies and qualify potential opportunities',
+  'Route qualified opportunities into a CRM pipeline',
 ]
 
 // One layout rail for every section: heading on the left, content on the right.
 function Rail({ id, title, intro, children, className = '' }) {
   return (
-    <section id={id} className={`scroll-mt-20 border-t border-white/[0.06] py-24 sm:py-28 ${className}`}>
+    <section id={id} className={`border-t border-white/[0.06] py-24 sm:py-28 ${className}`}>
       <div className="container-site grid gap-12 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-5">
           <h2 className="h-section max-w-md">{title}</h2>
@@ -32,10 +57,23 @@ function Rail({ id, title, intro, children, className = '' }) {
   )
 }
 
+function Rows({ items }) {
+  return (
+    <ul className="divide-y divide-white/[0.08] border-y border-white/[0.08]">
+      {items.map(([title, text]) => (
+        <li key={title} className="py-6">
+          <h3 className="h-card">{title}</h3>
+          <p className="mt-2 max-w-xl text-[15px] leading-relaxed text-muted">{text}</p>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
 export default function Home() {
   usePageMeta(
     null,
-    'Versflows helps B2B businesses build a more predictable pipeline through targeted prospect research, outbound campaigns and organised follow-up.'
+    'Versflows helps businesses build structured lead generation systems through targeted prospect research, outbound campaigns and organised follow-up.'
   )
 
   return (
@@ -47,8 +85,8 @@ export default function Home() {
           <div className="lg:col-span-7">
             <h1 className="h-display max-w-2xl">Build a more predictable pipeline for your B2B business.</h1>
             <p className="lede mt-7 max-w-xl">
-              Targeted prospect research, outbound campaigns and organised follow-up, so new commercial opportunities
-              come in consistently.
+              Versflows helps businesses build structured lead generation systems through targeted prospect research,
+              outbound campaigns and organised follow-up.
             </p>
             <div className="mt-10 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
               <PillLink to="/contact">{CTA_PRIMARY}</PillLink>
@@ -65,27 +103,37 @@ export default function Home() {
 
       <LogoStrip />
 
-      <Rail title="New business shouldn't depend on who has time to prospect." className="border-t-0">
-        <ul className="divide-y divide-white/[0.08] border-y border-white/[0.08]">
-          {SYMPTOMS.map(([title, text]) => (
-            <li key={title} className="grid gap-1 py-5 sm:grid-cols-[16rem_1fr] sm:gap-8">
-              <h3 className="text-[17px] font-medium tracking-[-0.01em]">{title}</h3>
-              <p className="text-[15px] leading-relaxed text-muted">{text}</p>
-            </li>
-          ))}
-        </ul>
+      <Rail
+        title="New business shouldn't depend on who has time to prospect."
+        intro="For most service businesses, prospecting happens in the gaps: between jobs, after hours or when work slows down. The pipeline rises and falls with how busy the team is."
+        className="border-t-0"
+      >
+        <Rows items={SYMPTOMS} />
         <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink">
-          The fix isn't more effort. It's a process that keeps running when you're busy.
+          The answer is rarely more effort. It is a structured process that keeps running whether or not you are free
+          that week.
         </p>
       </Rail>
 
-      {/* Process */}
+      <Rail
+        title="We build and run the system that creates new conversations."
+        intro="A managed process covering who to target, how to reach them and what happens when someone replies."
+      >
+        <Rows items={DOES} />
+      </Rail>
+
+      {/* Process: the one full-width sequence */}
       <section id="process" className="scroll-mt-20 border-t border-white/[0.06] bg-night-2/60 py-24 sm:py-28">
         <div className="container-site">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-            <h2 className="h-section max-w-xl">How it works.</h2>
+            <div className="max-w-xl">
+              <h2 className="h-section">Eight stages, grouped into four phases.</h2>
+              <p className="mt-5 text-[16px] leading-relaxed text-muted">
+                Every campaign follows the same structure, so you always know what is happening and what comes next.
+              </p>
+            </div>
             <Link to="/b2b-lead-generation#stages" className="link-sky shrink-0">
-              See the full process
+              See all eight stages
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -108,7 +156,10 @@ export default function Home() {
                   </span>
                   <div className="md:mt-6">
                     <h3 className="text-2xl font-medium tracking-[-0.02em]">{p.title}</h3>
-                    <p className="mt-2 max-w-[16rem] text-[15px] leading-relaxed text-muted">{p.text}</p>
+                    <p className="mt-2 text-[15px] leading-relaxed text-muted">
+                      <span className="text-faint">{p.range}. </span>
+                      {p.text}
+                    </p>
                   </div>
                 </li>
               )
@@ -119,11 +170,29 @@ export default function Home() {
 
       <Rail
         title="B2B lead generation, done for you."
-        intro="Not a contact list and not a software login. We run the whole campaign; you take the conversations."
+        intro="Our core service. Not a list of contacts and not a software login. We plan, run and manage the campaign, and you take over when there is a real conversation to have."
       >
-        <div className="panel p-8 sm:p-10">
-          <h3 className="h-card">Built for</h3>
-          <CheckList className="mt-5 space-y-0 sm:columns-2 sm:gap-10 [&>li]:mb-3 [&>li]:break-inside-avoid" items={B2B_AUDIENCES} />
+        <div className="panel grid gap-10 p-8 sm:grid-cols-2 sm:p-10">
+          <div>
+            <h3 className="h-card">Built for</h3>
+            <CheckList
+              className="mt-5"
+              items={[...B2B_AUDIENCES, 'Businesses pursuing larger contracts, partnerships or commercial buyers']}
+            />
+          </div>
+          <div>
+            <h3 className="h-card">What you get</h3>
+            <CheckList
+              className="mt-5"
+              items={[
+                'A defined target market and verified prospect database',
+                'Personalised outbound campaigns with planned follow-up',
+                'Reply handling and qualification against your criteria',
+                'A CRM pipeline with notifications when opportunities arrive',
+                'Regular reporting and ongoing optimisation',
+              ]}
+            />
+          </div>
         </div>
         <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
           <PillLink to="/contact">{CTA_PRIMARY}</PillLink>
@@ -134,50 +203,68 @@ export default function Home() {
       </Rail>
 
       <Rail
-        id="recent-work"
-        title="Recent work."
-        intro="A commercial grounds maintenance company in the Central West of NSW, looking for more high-ticket, recurring commercial contracts."
+        title="Example of our process."
+        intro="Markwicks Services is a commercial maintenance and grounds business across the Bathurst, Orange and Lithgow region of NSW. This is how its outbound campaign is structured."
       >
-        <div className="panel overflow-hidden">
-          <div className="p-8 sm:p-10">
-            <h3 className="h-card">The campaign</h3>
-            <p className="mt-3 max-w-2xl text-[16px] leading-relaxed text-muted">
-              A targeted, multi-channel campaign covering the total addressable market in the region. It is built to book
-              opportunities where the client can build relationships and do on-site visits that lead to commercial work.
+        <div className="grid gap-6">
+          <ol className="panel p-3">
+            {MARKWICKS_STEPS.map((step, i) => (
+              <li key={step} className="flex items-baseline gap-5 rounded-xl px-5 py-3.5">
+                <span className="w-4 shrink-0 text-[14px] text-faint tabular">{i + 1}</span>
+                <span className="text-[16px] leading-snug text-ink">{step}</span>
+              </li>
+            ))}
+          </ol>
+          <div>
+            <dl className="grid grid-cols-2 gap-x-6 border-y border-white/[0.08] text-[15px] sm:grid-cols-4">
+              {[
+                ['Client', 'Markwicks Services'],
+                ['Sector', 'Commercial maintenance and grounds'],
+                ['Approach', 'Managed B2B outbound'],
+                ['Status', 'Preparing for launch'],
+              ].map(([k, v]) => (
+                <div key={k} className="py-3.5">
+                  <dt className="text-[13px] text-faint">{k}</dt>
+                  <dd className={`mt-0.5 ${k === 'Status' ? 'text-sky' : 'text-ink'}`}>{v}</dd>
+                </div>
+              ))}
+            </dl>
+            <p className="mt-4 text-[13px] leading-relaxed text-faint">
+              Outcomes will only be shared once they have been verified.
             </p>
           </div>
-          <div className="border-t border-white/[0.08] px-8 pb-1 pt-7 sm:px-10">
-            <h3 className="text-[15px] font-medium text-ink">The list, split three ways in a targeting matrix</h3>
-          </div>
-          <dl className="divide-y divide-white/[0.08] pb-2">
-            {[
-              ['Verified decision-makers', 'Named contacts with full enrichment, reached with personalised outreach and follow-up.'],
-              ['Company inboxes', 'General business email addresses where no decision-maker could be verified.'],
-              ['Phone-only accounts', 'Businesses with a phone number only, worked by phone.'],
-            ].map(([title, text]) => (
-              <div key={title} className="grid gap-1 px-8 py-5 sm:grid-cols-[13rem_1fr] sm:gap-6 sm:px-10">
-                <dt className="text-[16px] font-medium tracking-[-0.01em] text-sky">{title}</dt>
-                <dd className="text-[15px] leading-relaxed text-muted">{text}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
       </Rail>
 
-      <section className="border-t border-white/[0.06] py-14 sm:py-16">
-        <div className="container-site flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-          <div>
-            <h2 className="text-2xl font-medium tracking-[-0.02em] sm:text-3xl">Lead generation for local service businesses.</h2>
-            <p className="mt-2 text-[15px] text-muted">Social media advertising, web design and follow-up, connected into one system.</p>
-          </div>
-          <Link to="/additional-services" className="btn-ghost shrink-0 self-start lg:self-auto">
-            View additional services
-            <ArrowUpRight className="h-4 w-4" />
-          </Link>
-        </div>
-      </section>
+      <Rail
+        title="Lead generation for local service businesses."
+        intro="For landscapers, pool builders and other local providers: social media advertising, web design and follow-up, connected into one combined system."
+      >
+        <ul className="flex flex-wrap gap-2">
+          {['Meta Ads', 'Websites and landing pages', 'Local lead generation', 'CRM setup', 'Lead follow-up automation'].map((s) => (
+            <li key={s} className="rounded-full border border-white/[0.12] bg-white/[0.04] px-4 py-2 text-[15px] text-ink">
+              {s}
+            </li>
+          ))}
+        </ul>
+        <Link to="/additional-services" className="link-sky mt-8">
+          View additional services
+          <ArrowUpRight className="h-4 w-4" />
+        </Link>
+      </Rail>
 
-      <CtaBand text="Tell us who you want to reach. We'll come back with how we'd approach it." />
+      <Rail title="A focused acquisition partner.">
+        <p className="max-w-xl text-lg leading-relaxed text-muted">
+          We start by understanding your market and commercial goals, build a process around them, run it carefully and
+          improve it based on evidence. Clear communication and honest reporting throughout, without inflated promises.
+        </p>
+        <Link to="/about" className="link-sky mt-8">
+          About our approach
+          <ArrowRight className="h-4 w-4" />
+        </Link>
+      </Rail>
+
+      <CtaBand />
     </>
   )
 }
