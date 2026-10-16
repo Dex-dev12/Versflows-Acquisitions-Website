@@ -11,6 +11,41 @@ export function usePageMeta(title, description) {
   }, [title, description])
 }
 
+// Adds `is-visible` once the element scrolls into view; pair with the `.reveal` class.
+export function useInView(threshold = 0.2) {
+  const [el, setEl] = useState(null)
+  const [visible, setVisible] = useState(false)
+  useEffect(() => {
+    if (!el) return
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true)
+          obs.disconnect()
+        }
+      },
+      { threshold, rootMargin: '0px 0px -6% 0px' }
+    )
+    obs.observe(el)
+    return () => obs.disconnect()
+  }, [el, threshold])
+  return [setEl, visible]
+}
+
+export function Reveal({ as: Tag = 'div', delay = 0, className = '', children, ...rest }) {
+  const [ref, visible] = useInView(0.15)
+  return (
+    <Tag
+      ref={ref}
+      className={`reveal ${visible ? 'is-visible' : ''} ${className}`}
+      style={delay ? { '--d': `${delay}s` } : undefined}
+      {...rest}
+    >
+      {children}
+    </Tag>
+  )
+}
+
 export function PillLink({ to, children, className = '' }) {
   return (
     <Link to={to} className={`btn-pill ${className}`}>
@@ -25,7 +60,7 @@ export function PillLink({ to, children, className = '' }) {
 export function PageHero({ title, children, actions }) {
   return (
     <section className="relative overflow-hidden">
-      <div aria-hidden="true" className="glow pointer-events-none absolute inset-0" />
+      <div aria-hidden="true" className="glow glow-drift pointer-events-none absolute inset-0" />
       <div className="container-site relative pb-20 pt-32 sm:pb-24 sm:pt-40">
         <h1 className="h-display max-w-4xl">{title}</h1>
         {children && <div className="lede mt-7 max-w-2xl">{children}</div>}
@@ -79,7 +114,7 @@ export function CtaBand({
 }) {
   return (
     <section className="relative overflow-hidden border-t border-white/[0.06]">
-      <div aria-hidden="true" className="glow pointer-events-none absolute inset-0 [background-position:center]" />
+      <div aria-hidden="true" className="glow glow-drift pointer-events-none absolute inset-0 [background-position:center]" />
       <div className="container-site relative py-28 text-center sm:py-36">
         <h2 className="h-section mx-auto max-w-3xl sm:text-5xl">{title}</h2>
         <p className="lede mx-auto mt-6 max-w-xl">{text}</p>

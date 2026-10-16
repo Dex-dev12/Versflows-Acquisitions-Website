@@ -12,6 +12,8 @@ import Terms from './pages/Terms.jsx'
 import NotFound from './pages/NotFound.jsx'
 import './index.css'
 
+document.documentElement.classList.add('js')
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
