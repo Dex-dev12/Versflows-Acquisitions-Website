@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color-scheme: dark; scrollbar-color: #2A2F3A #0A0C11; }
+  body { @apply bg-night text-ink font-sans; overflow-x: hidden; caret-color: #62BDFF; }
+  ::selection { background-color: #0060FC; color: #FFFFFF; }
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #0A0C11; }
+  ::-webkit-scrollbar-thumb { background: #2A2F3A; border-radius: 10px; border: 2px solid #0A0C11; }
+  ::-webkit-scrollbar-thumb:hover { background: #3A4150; }
+  :focus-visible { outline: 2px solid #62BDFF; outline-offset: 3px; border-radius: 6px; }
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
+  a { text-underline-offset: 4px; }
+  .tabular { font-variant-numeric: tabular-nums; }
+}
+
+@layer components {
+  .container-site { @apply mx-auto w-full max-w-site px-5 sm:px-8 lg:px-10; }
+
+  .h-display { @apply text-[2.55rem] font-medium leading-[1.05] tracking-[-0.035em] sm:text-6xl lg:text-[4.5rem]; }
+  .h-section { @apply text-[2rem] font-medium leading-[1.1] tracking-[-0.03em] sm:text-[2.75rem]; }
+  .h-card { @apply text-xl font-medium tracking-[-0.015em]; }
+  .lede { @apply text-lg leading-relaxed text-muted sm:text-[1.2rem]; }
+
+  .panel { @apply rounded-panel border border-white/[0.08] bg-white/[0.035]; }
+
+  /* Primary action: white pill carrying a round signal-blue arrow */
+  .btn-pill { @apply inline-flex whitespace-nowrap items-center justify-between gap-4 rounded-full bg-ink py-1.5 pl-6 pr-1.5 text-[15px] font-medium text-night transition-colors duration-300 hover:bg-white; }
+  .btn-dot { @apply grid h-9 w-9 shrink-0 place-items-center rounded-full bg-signal text-white transition-transform duration-500 ease-expo; }
+  .btn-pill:hover .btn-dot { transform: translateX(3px); }
+  .btn-ghost { @apply inline-flex whitespace-nowrap items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 text-[15px] font-medium text-ink transition-colors duration-300 hover:border-white/40 hover:bg-white/[0.04]; }
+
+  .link-sky { @apply inline-flex items-center gap-1.5 font-medium text-sky underline-offset-4 hover:underline; }
+
+  .glow { background: radial-gradient(55% 60% at 50% 35%, rgba(11, 34, 71, 0.95) 0%, rgba(11, 34, 71, 0) 72%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

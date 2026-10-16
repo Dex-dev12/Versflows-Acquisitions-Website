@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+.vercel
+.impeccable/review
+.impeccable/mocks
+.impeccable/build
+*.local
+.impeccable/hook.cache.json

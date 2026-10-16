@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T18:08:20+00:00",
+  "title": "Design System: Versflows Acquisitions",
+  "extensions": {
+    "colorMeta": {
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "canonical": "oklch(15.5% 0.011 268.0)",
+        "tonalRamp": [
+          "oklch(15% 0.011 268.0)",
+          "oklch(26% 0.011 268.0)",
+          "oklch(37% 0.011 268.0)",
+          "oklch(48% 0.011 268.0)",
+          "oklch(59% 0.011 268.0)",
+          "oklch(70% 0.011 268.0)",
+          "oklch(82% 0.011 268.0)",
+          "oklch(95% 0.011 268.0)"
+        ]
+      },
+      "night-2": {
+        "role": "neutral",
+        "displayName": "Night Two",
+        "canonical": "oklch(17.8% 0.015 266.7)",
+        "tonalRamp": [
+          "oklch(15% 0.015 266.7)",
+          "oklch(26% 0.015 266.7)",
+          "oklch(37% 0.015 266.7)",
+          "oklch(48% 0.015 266.7)",
+          "oklch(59% 0.015 266.7)",
+          "oklch(70% 0.015 266.7)",
+          "oklch(82% 0.015 266.7)",
+          "oklch(95% 0.015 266.7)"
+        ]
+      },
+      "night-footer": {
+        "role": "neutral",
+        "displayName": "Footer Night",
+        "canonical": "oklch(13.5% 0.009 272.5)",
+        "tonalRamp": [
+          "oklch(15% 0.009 272.5)",
+          "oklch(26% 0.009 272.5)",
+          "oklch(37% 0.009 272.5)",
+          "oklch(48% 0.009 272.5)",
+          "oklch(59% 0.009 272.5)",
+          "oklch(70% 0.009 272.5)",
+          "oklch(82% 0.009 272.5)",
+          "oklch(95% 0.009 272.5)"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field",
+        "canonical": "oklch(19.6% 0.015 266.8)",
+        "tonalRamp": [
+          "oklch(15% 0.015 266.8)",
+          "oklch(26% 0.015 266.8)",
+          "oklch(37% 0.015 266.8)",
+          "oklch(48% 0.015 266.8)",
+          "oklch(59% 0.015 266.8)",
+          "oklch(70% 0.015 266.8)",
+          "oklch(82% 0.015 266.8)",
+          "oklch(95% 0.015 266.8)"
+        ]
+      },
+      "field-focus": {
+        "role": "neutral",
+        "displayName": "Field Focus",
+        "canonical": "oklch(21.5% 0.023 269.0)",
+        "tonalRamp": [
+          "oklch(15% 0.023 269.0)",
+          "oklch(26% 0.023 269.0)",
+          "oklch(37% 0.023 269.0)",
+          "oklch(48% 0.023 269.0)",
+          "oklch(59% 0.023 269.0)",
+          "oklch(70% 0.023 269.0)",
+          "oklch(82% 0.023 269.0)",
+          "oklch(95% 0.023 269.0)"
+        ]
+      },
+      "deep": {
+        "role": "tertiary",
+        "displayName": "Midnight Navy",
+        "canonical": "oklch(25.8% 0.075 259.6)",
+        "tonalRamp": [
+          "oklch(15% 0.075 259.6)",
+          "oklch(26% 0.075 259.6)",
+          "oklch(37% 0.075 259.6)",
+          "oklch(48% 0.075 259.6)",
+          "oklch(59% 0.075 259.6)",
+          "oklch(70% 0.075 259.6)",
+          "oklch(82% 0.075 259.6)",
+          "oklch(95% 0.075 259.6)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Bone",
+        "canonical": "oklch(96.0% 0.005 258.3)",
+        "tonalRamp": [
+          "oklch(15% 0.005 258.3)",
+          "oklch(26% 0.005 258.3)",
+          "oklch(37% 0.005 258.3)",
+          "oklch(48% 0.005 258.3)",
+          "oklch(59% 0.005 258.3)",
+          "oklch(70% 0.005 258.3)",
+          "oklch(82% 0.005 258.3)",
+          "oklch(95% 0.005 258.3)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Pure White",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(26% 0.000 89.9)",
+          "oklch(37% 0.000 89.9)",
+          "oklch(48% 0.000 89.9)",
+          "oklch(59% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(82% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "oklch(72.4% 0.017 262.7)",
+        "tonalRamp": [
+          "oklch(15% 0.017 262.7)",
+          "oklch(26% 0.017 262.7)",
+          "oklch(37% 0.017 262.7)",
+          "oklch(48% 0.017 262.7)",
+          "oklch(59% 0.017 262.7)",
+          "oklch(70% 0.017 262.7)",
+          "oklch(82% 0.017 262.7)",
+          "oklch(95% 0.017 262.7)"
+        ]
+      },
+      "faint": {
+        "role": "neutral",
+        "displayName": "Dusk",
+        "canonical": "oklch(60.9% 0.019 264.4)",
+        "tonalRamp": [
+          "oklch(15% 0.019 264.4)",
+          "oklch(26% 0.019 264.4)",
+          "oklch(37% 0.019 264.4)",
+          "oklch(48% 0.019 264.4)",
+          "oklch(59% 0.019 264.4)",
+          "oklch(70% 0.019 264.4)",
+          "oklch(82% 0.019 264.4)",
+          "oklch(95% 0.019 264.4)"
+        ]
+      },
+      "signal": {
+        "role": "primary",
+        "displayName": "Signal Blue",
+        "canonical": "oklch(55.0% 0.244 261.4)",
+        "tonalRamp": [
+          "oklch(15% 0.244 261.4)",
+          "oklch(26% 0.244 261.4)",
+          "oklch(37% 0.244 261.4)",
+          "oklch(48% 0.244 261.4)",
+          "oklch(59% 0.244 261.4)",
+          "oklch(70% 0.244 261.4)",
+          "oklch(82% 0.244 261.4)",
+          "oklch(95% 0.244 261.4)"
+        ]
+      },
+      "sky": {
+        "role": "secondary",
+        "displayName": "Pipeline Sky",
+        "canonical": "oklch(76.9% 0.129 242.5)",
+        "tonalRamp": [
+          "oklch(15% 0.129 242.5)",
+          "oklch(26% 0.129 242.5)",
+          "oklch(37% 0.129 242.5)",
+          "oklch(48% 0.129 242.5)",
+          "oklch(59% 0.129 242.5)",
+          "oklch(70% 0.129 242.5)",
+          "oklch(82% 0.129 242.5)",
+          "oklch(95% 0.129 242.5)"
+        ]
+      },
+      "chrome-scrollbar": {
+        "role": "neutral",
+        "displayName": "Scrollbar",
+        "canonical": "oklch(30.5% 0.021 265.9)",
+        "tonalRamp": [
+          "oklch(15% 0.021 265.9)",
+          "oklch(26% 0.021 265.9)",
+          "oklch(37% 0.021 265.9)",
+          "oklch(48% 0.021 265.9)",
+          "oklch(59% 0.021 265.9)",
+          "oklch(70% 0.021 265.9)",
+          "oklch(82% 0.021 265.9)",
+          "oklch(95% 0.021 265.9)"
+        ]
+      },
+      "chrome-scrollbar-hover": {
+        "role": "neutral",
+        "displayName": "Scrollbar Hover",
+        "canonical": "oklch(37.5% 0.027 265.4)",
+        "tonalRamp": [
+          "oklch(15% 0.027 265.4)",
+          "oklch(26% 0.027 265.4)",
+          "oklch(37% 0.027 265.4)",
+          "oklch(48% 0.027 265.4)",
+          "oklch(59% 0.027 265.4)",
+          "oklch(70% 0.027 265.4)",
+          "oklch(82% 0.027 265.4)",
+          "oklch(95% 0.027 265.4)"
+        ]
+      },
+      "panel-fill": {
+        "role": "neutral",
+        "displayName": "Panel Fill",
+        "canonical": "rgba(255, 255, 255, 0.035)"
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(255, 255, 255, 0.08)"
+      },
+      "hairline-soft": {
+        "role": "neutral",
+        "displayName": "Soft Hairline",
+        "canonical": "rgba(255, 255, 255, 0.06)"
+      },
+      "pill-border": {
+        "role": "neutral",
+        "displayName": "Pill Border",
+        "canonical": "rgba(255, 255, 255, 0.15)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero h1 and Contact title, mobile step."
+      },
+      "display-sm": {
+        "displayName": "Display (sm)",
+        "purpose": "Display at the sm breakpoint."
+      },
+      "display-lg": {
+        "displayName": "Display (lg)",
+        "purpose": "Display at the lg breakpoint; the Home headline breaks over two lines."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s, mobile step."
+      },
+      "headline-sm": {
+        "displayName": "Headline (sm)",
+        "purpose": "Section h2s at sm."
+      },
+      "headline-cta": {
+        "displayName": "Headline CTA",
+        "purpose": "The closing CTA band heading at sm."
+      },
+      "subhead-sm": {
+        "displayName": "Subhead (sm)",
+        "purpose": "Compact section headings at sm (title-lg below sm)."
+      },
+      "title-lg": {
+        "displayName": "Title Large",
+        "purpose": "Phase titles, mobile menu items, compact section headings below sm."
+      },
+      "title-stage": {
+        "displayName": "Stage Title",
+        "purpose": "B2B Lead Generation stage titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Panel and list-item headings."
+      },
+      "lede-sm": {
+        "displayName": "Lede (sm)",
+        "purpose": "Lede at sm."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The single support paragraph under a display or headline, in Mist."
+      },
+      "body-lg": {
+        "displayName": "Body Large",
+        "purpose": "FAQ questions."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Panel copy, descriptions, FAQ answers, form input text."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "List descriptions, check lists, footer links, button labels."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nav links, form labels, pipeline station names."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Captions, footer column titles, pipeline descriptions, logo strip label."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "Numerals inside the Contact page's 24px step circles."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Pipeline travel, arrow-dot nudge, FAQ toggle rotation, step-line growth."
+      },
+      {
+        "name": "duration-colour",
+        "value": "300ms",
+        "purpose": "Button fills, link and nav colour changes, logo opacity."
+      },
+      {
+        "name": "duration-state",
+        "value": "500ms",
+        "purpose": "Arrow-dot slide, station dot and label colour, header solidifying."
+      },
+      {
+        "name": "duration-travel",
+        "value": "1000ms",
+        "purpose": "Pipeline line and halo moving between stations (700ms on the mobile vertical track)."
+      },
+      {
+        "name": "pipeline-tick",
+        "value": "1500ms",
+        "purpose": "Interval between stations; holds two ticks on Handoff. Disabled under prefers-reduced-motion, which shows the final state."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Pill",
+      "kind": "button",
+      "refersTo": "button-pill",
+      "description": "The single primary action in a cluster: Bone pill carrying a round signal-blue arrow dot.",
+      "html": "<a href=\"#\" class=\"ds-btn-pill\">Discuss Your Growth Goals<span class=\"ds-btn-dot\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></span></a>",
+      "css": ".ds-btn-pill { font-family: Geist, system-ui, sans-serif; display: inline-flex; align-items: center; justify-content: space-between; gap: 16px; white-space: nowrap; border-radius: 9999px; background: #F0F2F5; color: #0A0C11; padding: 6px 6px 6px 24px; font-size: 15px; font-weight: 500; text-decoration: none; transition: background-color 300ms; } .ds-btn-pill:hover { background: #FFFFFF; } .ds-btn-pill:focus-visible { outline: 2px solid #62BDFF; outline-offset: 3px; } .ds-btn-dot { display: grid; place-items: center; width: 36px; height: 36px; flex-shrink: 0; border-radius: 9999px; background: #0060FC; color: #FFFFFF; transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-pill:hover .ds-btn-dot { transform: translateX(3px); }"
+    },
+    {
+      "name": "Ghost Pill",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary routes: transparent pill with a 15% white hairline.",
+      "html": "<a href=\"#\" class=\"ds-btn-ghost\">View additional services <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a>",
+      "css": ".ds-btn-ghost { font-family: Geist, system-ui, sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; border-radius: 9999px; border: 1px solid rgba(255,255,255,0.15); background: transparent; color: #F0F2F5; padding: 12px 24px; font-size: 15px; font-weight: 500; text-decoration: none; transition: border-color 300ms, background-color 300ms; } .ds-btn-ghost:hover { border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.04); } .ds-btn-ghost:focus-visible { outline: 2px solid #62BDFF; outline-offset: 3px; }"
+    },
+    {
+      "name": "Sky Text Link",
+      "kind": "button",
+      "refersTo": "link-sky",
+      "description": "Inline onward link in sky with a trailing arrow.",
+      "html": "<a href=\"#\" class=\"ds-link-sky\">See all eight stages <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>",
+      "css": ".ds-link-sky { font-family: Geist, system-ui, sans-serif; display: inline-flex; align-items: center; gap: 6px; color: #62BDFF; font-size: 16px; font-weight: 500; text-decoration: none; text-underline-offset: 4px; } .ds-link-sky:hover { text-decoration: underline; } .ds-link-sky:focus-visible { outline: 2px solid #62BDFF; outline-offset: 3px; border-radius: 6px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Contact form field: dark fill, hairline, 12px radius, sky border on focus.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Business name <span class=\"ds-req\" aria-hidden=\"true\">*</span></span><input class=\"ds-input\" type=\"text\" placeholder=\"https://\"></label>",
+      "css": ".ds-field { font-family: Geist, system-ui, sans-serif; display: block; } .ds-field-label { font-size: 14px; font-weight: 500; color: #F0F2F5; } .ds-req { color: #62BDFF; } .ds-input { font-family: Geist, system-ui, sans-serif; margin-top: 8px; display: block; width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.10); background: #12151C; padding: 12px 16px; font-size: 16px; color: #F0F2F5; transition: border-color 150ms, background-color 150ms; } .ds-input::placeholder { color: rgba(125,131,143,0.8); } .ds-input:focus { outline: none; border-color: #62BDFF; background: #151924; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Fixed 72px bar: wordmark, centred 14px links, compact white pill.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-brand\">Versflows Acquisitions</span><span class=\"ds-nav-links\"><a href=\"#\" class=\"ds-nav-link\">B2B Lead Generation</a><a href=\"#\" class=\"ds-nav-link\">Additional Services</a><a href=\"#\" class=\"ds-nav-link\" aria-current=\"page\">About</a><a href=\"#\" class=\"ds-nav-link\">Contact</a></span><a href=\"#\" class=\"ds-nav-cta\">Let's talk<span class=\"ds-nav-dot\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></span></a></nav>",
+      "css": ".ds-nav { font-family: Geist, system-ui, sans-serif; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 24px; height: 72px; padding: 0 24px; background: rgba(10,12,17,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.06); } .ds-nav-brand { color: #F0F2F5; font-weight: 500; font-size: 15px; } .ds-nav-links { display: flex; justify-content: center; gap: 32px; } .ds-nav-link { font-size: 14px; color: #A0A6B1; text-decoration: none; transition: color 300ms; } .ds-nav-link:hover, .ds-nav-link[aria-current=page] { color: #F0F2F5; } .ds-nav-link:focus-visible { outline: 2px solid #62BDFF; outline-offset: 3px; border-radius: 6px; } .ds-nav-cta { display: inline-flex; align-items: center; gap: 12px; border-radius: 9999px; background: #F0F2F5; color: #0A0C11; padding: 4px 4px 4px 16px; font-size: 14px; font-weight: 500; text-decoration: none; transition: background-color 150ms; } .ds-nav-cta:hover { background: #FFFFFF; } .ds-nav-dot { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 9999px; background: #0060FC; color: #FFFFFF; } .ds-nav-dot svg { width: 14px; height: 14px; }"
+    },
+    {
+      "name": "Translucent Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "The universal container: 3.5% white fill, 8% hairline, 18px radius, hairline internal splits, no shadow.",
+      "html": "<div class=\"ds-panel\"><div class=\"ds-panel-cell\"><h3 class=\"ds-panel-title\">Prospecting happens in bursts</h3><p class=\"ds-panel-text\">Outreach starts when work is quiet and stops when it picks up again.</p></div><div class=\"ds-panel-cell\"><h3 class=\"ds-panel-title\">No clear target list</h3><p class=\"ds-panel-text\">Without defined accounts and decision-makers, effort is spread too thin.</p></div></div>",
+      "css": ".ds-panel { font-family: Geist, system-ui, sans-serif; display: grid; grid-template-columns: 1fr 1fr; border-radius: 18px; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.035); } .ds-panel-cell { padding: 32px; } .ds-panel-cell + .ds-panel-cell { border-left: 1px solid rgba(255,255,255,0.08); } .ds-panel-title { margin: 0; font-size: 20px; font-weight: 500; letter-spacing: -0.015em; color: #F0F2F5; } .ds-panel-text { margin: 8px 0 0; font-size: 15px; line-height: 1.625; color: #A0A6B1; }"
+    },
+    {
+      "name": "Flow Chip",
+      "kind": "chip",
+      "description": "Process chips joined by hairlines; the last one is solid signal blue.",
+      "html": "<ol class=\"ds-flow\"><li class=\"ds-chip\">Meta ad</li><li class=\"ds-chip-join\" aria-hidden=\"true\"></li><li class=\"ds-chip\">Landing page</li><li class=\"ds-chip-join\" aria-hidden=\"true\"></li><li class=\"ds-chip ds-chip-end\">Booked quote</li></ol>",
+      "css": ".ds-flow { font-family: Geist, system-ui, sans-serif; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; list-style: none; margin: 0; padding: 0; } .ds-chip { border-radius: 9999px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.04); color: #F0F2F5; padding: 8px 16px; font-size: 15px; font-weight: 500; } .ds-chip-end { border-color: transparent; background: #0060FC; color: #FFFFFF; } .ds-chip-join { width: 20px; height: 1px; background: rgba(255,255,255,0.2); }"
+    },
+    {
+      "name": "Pipeline Track",
+      "kind": "custom",
+      "description": "Signature instrument: six stations, a sky line and halo travelling Market to Handoff in a translucent panel.",
+      "html": "<figure class=\"ds-track\"><div class=\"ds-track-rail\"><span class=\"ds-track-line\"></span><span class=\"ds-track-fill\"></span><span class=\"ds-track-halo\"></span><span class=\"ds-dot ds-on\" style=\"left:12.5%\"></span><span class=\"ds-dot ds-on\" style=\"left:37.5%\"></span><span class=\"ds-dot ds-on\" style=\"left:62.5%\"></span><span class=\"ds-dot\" style=\"left:87.5%\"></span></div><ol class=\"ds-track-labels\"><li class=\"ds-on\">Market</li><li class=\"ds-on\">Accounts</li><li class=\"ds-on\">Outreach</li><li>Handoff</li></ol><figcaption class=\"ds-track-cap\">Illustrative workflow</figcaption></figure>",
+      "css": ".ds-track { font-family: Geist, system-ui, sans-serif; margin: 0; overflow: hidden; border-radius: 18px; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.035); } .ds-track-rail { position: relative; height: 12px; margin: 32px 8px 0; } .ds-track-line { position: absolute; top: 50%; left: 12.5%; right: 12.5%; height: 1px; background: rgba(255,255,255,0.1); } .ds-track-fill { position: absolute; top: 50%; left: 12.5%; width: 50%; height: 1px; background: #62BDFF; transition: width 1000ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-track-halo { position: absolute; top: 50%; left: 62.5%; width: 96px; height: 96px; transform: translate(-50%, -50%); border-radius: 9999px; background: radial-gradient(circle, rgba(98,189,255,0.35) 0%, rgba(98,189,255,0) 65%); } .ds-dot { position: absolute; top: 50%; width: 12px; height: 12px; transform: translate(-50%, -50%); border-radius: 9999px; border: 1px solid rgba(255,255,255,0.25); background: #0A0C11; transition: background-color 500ms, border-color 500ms; } .ds-dot.ds-on { border-color: #62BDFF; background: #62BDFF; } .ds-track-labels { display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; margin: 28px 0 0; padding: 0 8px 28px; text-align: center; font-size: 14px; font-weight: 500; color: #7D838F; } .ds-track-labels .ds-on { color: #F0F2F5; } .ds-track-cap { border-top: 1px solid rgba(255,255,255,0.06); padding: 14px 24px; font-size: 13px; color: #7D838F; }"
+    },
+    {
+      "name": "Step Rail Node",
+      "kind": "custom",
+      "refersTo": "step-node",
+      "description": "Numbered round step nodes on a hairline that warms to sky; the terminal node is solid signal blue.",
+      "html": "<div class=\"ds-steps\"><span class=\"ds-steps-line\"></span><span class=\"ds-node\">1</span><span class=\"ds-node\">2</span><span class=\"ds-node\">3</span><span class=\"ds-node ds-node-end\">4</span></div>",
+      "css": ".ds-steps { font-family: Geist, system-ui, sans-serif; position: relative; display: flex; justify-content: space-between; max-width: 520px; } .ds-steps-line { position: absolute; top: 26px; left: 26px; right: 26px; height: 1px; background: linear-gradient(to right, rgba(255,255,255,0.15), rgba(255,255,255,0.15), #62BDFF); } .ds-node { position: relative; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 9999px; border: 1px solid rgba(255,255,255,0.15); background: #0A0C11; color: #F0F2F5; font-size: 15px; font-weight: 500; font-variant-numeric: tabular-nums; } .ds-node-end { border-color: #62BDFF; background: #0060FC; color: #FFFFFF; }"
+    },
+    {
+      "name": "Hero Glow Field",
+      "kind": "custom",
+      "description": "The navy radial glow behind page openings and the closing CTA band; the system's only ambient light.",
+      "html": "<section class=\"ds-glow\"><h2 class=\"ds-glow-title\">Ready for a more structured approach to new business?</h2></section>",
+      "css": ".ds-glow { font-family: Geist, system-ui, sans-serif; padding: 96px 24px; text-align: center; background-color: #0A0C11; background-image: radial-gradient(55% 60% at 50% 35%, rgba(11,34,71,0.95) 0%, rgba(11,34,71,0) 72%); } .ds-glow-title { margin: 0 auto; max-width: 18ch; font-size: 44px; font-weight: 500; line-height: 1.1; letter-spacing: -0.03em; color: #F0F2F5; text-wrap: balance; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Control Room",
+    "overview": "The site is a near-black room with the lights mostly off. Bone-white Geist headlines sit in generous darkness, one soft navy glow pools behind each page's opening and its closing call to action, and every surface is a translucent pane of 3.5% white edged by an 8% hairline. Nothing glows for decoration. The light that does exist does a job: a sky-blue line travels through a six-station pipeline, reached stations brighten, and the end of every process lands on one solid signal-blue node.\n\nDensity is low and the rhythm is slow. Sections breathe on 112 to 144px of vertical space, headings are centred or held in a left five-column rail, and content is carried by hairline-divided lists and panels rather than grids of boxes. Type does the hierarchy with a single weight (Geist 500) and tight negative tracking; colour does almost none of it. The world was modelled on a dark-mode SaaS grammar (leftclick.ai, pinned by the user) and translated so that the process instrument replaces the usual stat row.\n\nThe confirmed rejections come from the direction contract and the build agrees with them: no neon glow, no stat row of numbers, no grid of identical icon cards, no hero imagery, no eyebrows or monospace labels.",
+    "keyCharacteristics": [
+      "Near-black ground with tonal steps, never pure black and never a gradient wash.",
+      "One navy radial glow per hero and per closing band; nothing else glows except the pipeline light.",
+      "Translucent panels with hairline borders and an 18px radius; zero box-shadows.",
+      "White pill buttons that carry a round signal-blue arrow; ghost pills for everything secondary.",
+      "Geist 500 headlines with negative tracking, sentence case throughout.",
+      "Sky blue marks travel and reached state; signal blue marks the action and the destination."
+    ],
+    "rules": [
+      {
+        "name": "The Light and Destination Rule",
+        "body": "Sky is light in motion: lines, halos, dots, links, focus. Signal is where things arrive: the arrow you press and the last node of a process. Never swap them, and never set signal blue as text on night.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Glows Rule",
+        "body": "The navy glow appears behind a page's opening and behind its closing call to action. It never sits behind a mid-page section, a card or a button.",
+        "section": "colors"
+      },
+      {
+        "name": "The Single Weight Rule",
+        "body": "Every heading is Geist 500 and every paragraph is Geist 400. There is no 600 or 700 in the build; hierarchy comes from size and tracking.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "No uppercase, no tracked-out small labels, no monospace. Numbers that count steps use tabular figures, not a different face.",
+        "section": "typography"
+      },
+      {
+        "name": "The No-Shadow Rule",
+        "body": "Surfaces separate by fill and hairline, never by a cast shadow. If a surface needs to stand forward, raise its fill a few percent of white or give it a hairline; do not add a shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do set every page on Night and separate sections with a 6% full-bleed hairline or the Night Two band.",
+      "Do build containers as 3.5% white panels with an 8% hairline and an 18px radius.",
+      "Do use exactly one white pill with its signal-blue arrow dot per action cluster, paired with ghost pills for secondary routes.",
+      "Do keep headings in Geist 500 with negative tracking (-0.035em display, -0.03em headline, -0.015em to -0.02em titles).",
+      "Do show process as a sequence (rail, track or numbered list); stepped rails end on one signal-blue node.",
+      "Do animate state with the expo ease (cubic-bezier(0.16, 1, 0.3, 1)) and render the final state still under prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't add box-shadows, neon glows or coloured glows; the navy hero glow and the pipeline halo are the only light sources.",
+      "Don't add eyebrows, kickers, uppercase labels or monospace text above headings.",
+      "Don't set signal blue as text on night; use sky for coloured text.",
+      "Don't build grids of identical icon cards or a row of statistics.",
+      "Don't put imagery in the hero.",
+      "Don't introduce weights above 500, or surface radii other than 12px, 18px and fully round."
+    ]
+  }
+}
