@@ -35,7 +35,7 @@ function Rail({ id, title, intro, children, className = '' }) {
 export default function Home() {
   usePageMeta(
     null,
-    'Versflows helps B2B businesses build a more predictable pipeline through targeted prospect research, outbound campaigns and organised follow-up.'
+    'Versflows helps Australian B2B businesses build a more predictable pipeline through targeted prospect research, outbound campaigns and organised follow-up.'
   )
 
   return (
@@ -47,8 +47,8 @@ export default function Home() {
           <div className="lg:col-span-7">
             <h1 className="h-display max-w-2xl">Build a more predictable pipeline for your B2B business.</h1>
             <p className="lede mt-7 max-w-xl">
-              Targeted prospect research, outbound campaigns and organised follow-up, so new commercial opportunities
-              come in consistently.
+              Targeted prospect research, outbound campaigns and organised follow-up, for Australian businesses that
+              want new commercial work to come in consistently.
             </p>
             <div className="mt-10 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
               <PillLink to="/contact">{CTA_PRIMARY}</PillLink>

@@ -10,7 +10,7 @@ const FIELDS = [
   { name: 'website', label: 'Website', type: 'url', autoComplete: 'url', required: false, placeholder: 'https://' },
 ]
 
-const EMPTY = { name: '', business: '', email: '', website: '', goals: '', challenges: '' }
+const EMPTY = { name: '', business: '', email: '', website: '', goals: '', notes: '' }
 
 const NEXT_STEPS = [
   'We review your enquiry and website.',
@@ -21,7 +21,7 @@ const NEXT_STEPS = [
 export default function Contact() {
   usePageMeta(
     'Contact',
-    'Discuss your customer acquisition goals with Versflows. Tell us who you want to reach and what is getting in the way.'
+    'Discuss your growth goals with Versflows. Tell us what you are looking to achieve.'
   )
 
   const [form, setForm] = useState(EMPTY)
@@ -41,8 +41,8 @@ export default function Contact() {
       'What we want to achieve:',
       form.goals,
       '',
-      'Current challenges:',
-      form.challenges,
+      'Additional information:',
+      form.notes || 'None',
     ].join('\n')
     window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     setOpened(true)
@@ -58,8 +58,8 @@ export default function Contact() {
         <div className="lg:col-span-5">
           <h1 className="h-display">Discuss your growth goals.</h1>
           <p className="lede mt-7">
-            Tell us what your business wants to achieve and what is getting in the way. We will reply with an honest
-            view of whether we can help and how we would approach it.
+            Tell us what you're looking to achieve. We'll reply with an honest view of whether we can help and how
+            we'd approach it.
           </p>
 
           <div className="mt-12 border-t border-white/[0.08] pt-8">
@@ -114,7 +114,7 @@ export default function Contact() {
 
             <div className="mt-6">
               <label htmlFor="goals" className="text-[14px] font-medium text-ink">
-                What does your business want to achieve? <span className="text-sky" aria-hidden="true">*</span>
+                What are you looking to achieve? <span className="text-sky" aria-hidden="true">*</span>
               </label>
               <textarea
                 id="goals"
@@ -129,17 +129,15 @@ export default function Contact() {
             </div>
 
             <div className="mt-6">
-              <label htmlFor="challenges" className="text-[14px] font-medium text-ink">
-                Briefly, what are your current challenges? <span className="text-sky" aria-hidden="true">*</span>
+              <label htmlFor="notes" className="text-[14px] font-medium text-ink">
+                Any additional information? <span className="font-normal text-faint">(optional)</span>
               </label>
               <textarea
-                id="challenges"
-                name="challenges"
-                required
-                rows={4}
-                value={form.challenges}
-                onChange={set('challenges')}
-                placeholder="For example: we rely on referrals and have no consistent way to reach new commercial clients."
+                id="notes"
+                name="notes"
+                rows={3}
+                value={form.notes}
+                onChange={set('notes')}
                 className={`${inputCls} resize-y`}
               />
             </div>
