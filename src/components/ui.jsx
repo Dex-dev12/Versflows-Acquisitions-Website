@@ -8,6 +8,8 @@ export function usePageMeta(title, description) {
     document.title = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} | B2B Lead Generation`
     const meta = document.querySelector('meta[name="description"]')
     if (meta && description) meta.setAttribute('content', description)
+    const canonical = document.querySelector('link[rel="canonical"]')
+    if (canonical) canonical.setAttribute('href', `https://versflows.com${window.location.pathname === '/' ? '/' : window.location.pathname}`)
   }, [title, description])
 }
 
