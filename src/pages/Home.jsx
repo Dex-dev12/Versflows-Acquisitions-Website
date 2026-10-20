@@ -117,7 +117,7 @@ export default function Home() {
         <div aria-hidden="true" className="glow glow-drift pointer-events-none absolute inset-0" />
         <div className="container-site relative grid items-center gap-14 pb-20 pt-32 sm:pt-36 lg:grid-cols-12 lg:gap-10 lg:pb-24">
           <div className="hero-in lg:col-span-7">
-            <h1 className="h-display max-w-2xl">Build a more predictable pipeline for your B2B business.</h1>
+            <h1 className="h-display max-w-2xl">Build a more predictable B2B pipeline.</h1>
             <p className="lede mt-7 max-w-xl">
               Targeted prospect research, outbound campaigns and organised follow-up, for Australian businesses that
               want new commercial work to come in consistently.
